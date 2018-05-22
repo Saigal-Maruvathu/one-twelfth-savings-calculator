@@ -1,0 +1,29 @@
+function loadSquares(){
+  var red = document.getElementById('numOfMonths').innerHTML;
+
+  var blue= document.getElementById('numForFullLoan').innerHTML;
+
+
+
+  
+   const row1 = document.querySelector("#row1");
+  const row2 = document.querySelector("#row2");
+
+
+  for(let i = 0; i<=blue; i++) {
+    if(i <= red) {
+      row1.innerHTML += ('<div class="square red"></div>');
+    } else {
+      row1.innerHTML += ('<div class="square"></div>');
+    }
+
+    row2.innerHTML += ('<div class="square blue"></div>')
+  }
+
+
+
+
+
+
+
+}

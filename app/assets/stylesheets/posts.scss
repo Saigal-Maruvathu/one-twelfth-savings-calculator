@@ -1,3 +1,17 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.square {
+  height:20px;
+  width: 20px;
+  margin: 4px;
+  border: 2px dotted black;
+  display: inline-block;
+}
+.square.red {
+  background-color: red
+}
+.square.blue {
+  background-color: blue
+}

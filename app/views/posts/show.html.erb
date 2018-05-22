@@ -41,9 +41,20 @@
   </div>
 
   <div class="field">
-    <p>Number of months you pay: <%= (@post.numofmonthsyoupay*1000).floor/1000%></p>
+    <p>Number of months you pay: <span id="numOfMonths"><%= @post.numofmonthsyoupay%></span> </p>
   </div>
 
   <div class="field">
-    <p>Number of months for the full loan: <%= (@post.numofmonthsfullloan*1000).floor/1000%></p>
+    <p>Number of months for the full loan: <span id="numForFullLoan"><%= @post.numofmonthsfullloan %></span></p>
   </div>
+
+
+  <div id="row1"></div>
+  <div id="row2"></div>
+
+
+<script type="text/javascript">
+  loadSquares();
+</script>
+
+  <%= link_to 'Back', posts_path %>
