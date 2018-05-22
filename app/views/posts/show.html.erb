@@ -1,0 +1,49 @@
+
+  <div>
+      <h3><%= @post.title %></h3>
+      <p> Created <%= time_ago_in_words(@post.created_at) %> ago</p>
+  </div>
+
+  <div class="field">
+    <p>Total loan: <%= @post.totalloan%></p>
+  </div>
+
+  <div class="field">
+    <p>Number of months for full loan: <%= @post.numofmonthsfullloan%></p>
+  </div>
+
+  <div class="field">
+    <p>Interest rate: <%= @post.interestrate%></p>
+  </div>
+
+  <div class="field">
+    <p>Decimal conversion: <%= @post.decimalconversion%></p>
+  </div>
+
+  <div class="field">
+    <p>Monthy payment: <%= number_to_currency(@post.monthlypayment)%></p>
+  </div>
+
+  <div class="field">
+    <p>Fraction: <%= @post.fraction%> payment</p>
+  </div>
+
+  <div class="field">
+    <p>Fractional payment: <%= number_to_currency(@post.fractionalpayment)%></p>
+  </div>
+
+  <div class="field">
+    <p>Adjusted monthly payment: <%= number_to_currency(@post.adjustedmonthlypayment) %></p>
+  </div>
+
+  <div class="field">
+    <p>Full bill amount: <%= number_to_currency(@post.fullbill)%></p>
+  </div>
+
+  <div class="field">
+    <p>Number of months you pay: <%= (@post.numofmonthsyoupay*1000).floor/1000%></p>
+  </div>
+
+  <div class="field">
+    <p>Number of months for the full loan: <%= (@post.numofmonthsfullloan*1000).floor/1000%></p>
+  </div>

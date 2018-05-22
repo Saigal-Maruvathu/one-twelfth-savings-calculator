@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  totalloan: 9.99
+  monthlypayment: 9.99
+  interestrate: 9.99
+  decimalconversion: 9.99
+  fraction: 9.99
+  fractionalpayment: 9.99
+  fullbill: 9.99
+  youpay: 9.99
+  yoursavings: 9.99
+  numofmonthsyoupay: 9.99
+  numofmonthsfullloan: 9.99
+  user: one
+
+two:
+  totalloan: 9.99
+  monthlypayment: 9.99
+  interestrate: 9.99
+  decimalconversion: 9.99
+  fraction: 9.99
+  fractionalpayment: 9.99
+  fullbill: 9.99
+  youpay: 9.99
+  yoursavings: 9.99
+  numofmonthsyoupay: 9.99
+  numofmonthsfullloan: 9.99
+  user: two
