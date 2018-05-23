@@ -38,7 +38,19 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update(post_params)
-      redirect_to @post
+      @post.decimalconversion = conversion(@post)
+      @post.fullbill = total(@post)
+      @post.monthlypayment = paymentpermonth(@post)
+      p "monthly payment #{@post.monthlypayment}"
+      p "fraction #{ @post.fraction}"
+      @post.fractionalpayment = fractionalamount(@post)
+      @post.adjustedmonthlypayment = fractionaladdedtomonthly(@post)
+      @post.numofmonthsyoupay = numberofmonthsyouenduppaying(@post)
+      if @post.save
+        redirect_to @post
+      else
+        render 'edit'
+      end
     else
       render 'edit'
     end

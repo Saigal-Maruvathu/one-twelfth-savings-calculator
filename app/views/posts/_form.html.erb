@@ -26,16 +26,7 @@
   </div>
 <br>
 
-  <div class="field">
-    <p>Decimal conversion: <%= @post.decimalconversion%></p>
-  </div>
-<br>
-
-  <div class="field">
-    <p>Monthy payment: <%= number_to_currency(@post.monthlypayment)%></p>
-  </div>
-<br>
-
+<div class="field">
   <p id="">Fraction
   <select id="Fraction" name="post[fraction]">
     <option value="0.08333">1/12</option>
@@ -44,44 +35,14 @@
     <option value="2">Double payment</option>
   </select>
   </p>
+  </div>
 <br>
 
+<div class="links">
   <div class="actions">
     <%= form.submit %>
   </div>
+</div>
 <br>
-
-  <div class="field">
-    <p>Fractional payment: <%= number_to_currency(@post.fractionalpayment)%></p>
-  </div>
-<br>
-
-  <div class="field">
-    <p>Adjusted monthly payment: <%= number_to_currency(@post.adjustedmonthlypayment) %></p>
-  </div>
-<br>
-
-  <div class="field">
-    <p>Full bill amount: <%= number_to_currency(@post.fullbill)%></p>
-  </div>
-<br>
-
-<!--
-  <div class="field">
-    <p>You pay: <%= @post.youpay%></p>
-  </div>
-<br>
--->
-
-  <div class="field">
-    <p>Number of months you pay: <%= @post.numofmonthsyoupay%></p>
-  </div>
-<br>
-
-  <div class="field">
-    <p>Number of months for the full loan: <%= @post.numofmonthsfullloan%></p>
-  </div>
-<br>
-
 
 <% end %>

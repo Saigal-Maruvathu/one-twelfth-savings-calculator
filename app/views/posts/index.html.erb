@@ -2,23 +2,29 @@
 
 <% if @current_user %>
 
+  <div class="text">
   <h2><%= @current_user.email %>'s Profile</h2>
   <%= link_to 'Create New Post', new_post_path%>
 
+
   <h2><% @current_user.posts.each do |post|%></h2>
+</div>
 
 
-
-  <div>
-      <div>
+  <div class="background">
+      <div class="field">
           Bill: <%= post.title %>
+      </div>
+
+      <div class="field">
+        <p>Total loan: <%= post.totalloan%></p>
       </div>
 
       <div>
           <p>Created: <%= time_ago_in_words(post.created_at) %> ago</p>
       </div>
 
-      <div>
+      <div class="links">
           <p><%= link_to 'Show Post', post_path(post)%>
 
         <% if current_user.id == post.user_id %>

@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.text{
+  font-family: sans-serif;
+}
+
+.background {
+  background-color: rgb(128, 222, 239);
+  margin: 1% auto;
+  padding: 10px;
+}
+
 .square {
   height:20px;
   width: 20px;
@@ -14,4 +24,54 @@
 }
 .square.blue {
   background-color: blue
+}
+
+.bargraph {
+  background-color: bisque;
+  padding: 10px;
+}
+
+.inputfield {
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(128, 222, 178);
+    margin: 2% auto;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.field {
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: bisque;
+    margin: 2% auto;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.unadjustedfield {
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(128, 222, 239);
+    margin: 2% auto;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+.adjustedfield {
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(255, 97, 133);
+    margin: 2% auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.links {
+  text-align: center;
+  font-family: sans-serif;
 }
